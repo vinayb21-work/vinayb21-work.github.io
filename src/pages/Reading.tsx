@@ -38,9 +38,18 @@ const Reading = () => {
       rating: 5,
       category: "Technology",
       review: "The definitive guide to building reliable, scalable, and maintainable systems. A must-read for any backend engineer.",
-      link: "https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321"
+      link: "https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321",
+      linkLabel: "View on Amazon"
     },
-    // Add more books as needed
+    {
+      title: "How to Listen",
+      author: "Thich Nhat Hanh",
+      rating: 5,
+      category: "Personal Growth",
+      review: "A gentle yet profound guide to deep listening — the kind that requires presence, compassion, and the willingness to truly hear another person without judgment.",
+      link: "https://vinay-badhan21.medium.com/how-to-listen-thich-nhat-hanh-0de998f2c545",
+      linkLabel: "Read my review"
+    },
   ];
 
   const categories = ["All", "Technology", "Leadership", "Career", "Personal Growth"];
@@ -111,7 +120,7 @@ const Reading = () => {
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 text-amber-600 dark:text-amber-400 hover:underline text-sm"
                     >
-                      View on Amazon <ExternalLink className="w-3 h-3" />
+                      {book.linkLabel} <ExternalLink className="w-3 h-3" />
                     </a>
                   </CardContent>
                 </Card>
