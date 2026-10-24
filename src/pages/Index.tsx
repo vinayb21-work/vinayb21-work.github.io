@@ -34,9 +34,18 @@ const Index = () => {
     items: ["ReactJS", "NextJS", "Bootstrap", "HTML", "CSS", "JavaScript", "TypeScript"]
   }];
   const experience = [{
-    title: "Engineering Manager",
+    title: "Member of Technical Staff",
+    company: "Mem0",
+    duration: "Oct 2025 - Present",
+    description: "Building the memory layer for AI agents and applications, enabling persistent, contextual intelligence across interactions.",
+    techStack: ["Python", "TypeScript", "LLMs", "Vector Databases", "RAG", "Memory Systems", "AI Agents", "AWS", "PostgreSQL", "Turbopuffer", "Redis"],
+    achievements: [
+      "Working on the memory layer for AI agents and apps at Mem0"
+    ]
+  }, {
+    title: "Sr. Engineering Manager",
     company: "Medable, Inc",
-    duration: "Jun 2023 - Present",
+    duration: "Jun 2023 - Oct 2025",
     description: "Scaled platform reliability and performance while integrating agentic workflows to streamline study building and reduce manual effort for clinical trial teams.",
     techStack: ["Python", "TypeScript", "Node.js", "LLMs", "RAG", "GCP", "PostgreSQL", "Redis", "Azure", "MCP", "Google ADK", "LangGraph", "Git", "Terraform", "CI/CD", "Docker", "Kubernetes"],
     achievements: [
@@ -285,11 +294,11 @@ const Index = () => {
             </AvatarFallback>
           </Avatar>
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-slate-800 dark:text-slate-100 mb-4 animate-fade-in">
-            <span className="block sm:inline">Staff Engineer / Engineering Manager</span>
+            <span className="block sm:inline">Member of Technical Staff / Sr. Engineering Manager</span>
           </h1>
           <p className="text-xl text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
-            Staff Engineer & Engineering Manager who turns complex technical challenges into measurable business outcomes.
-            Specializing in AI-powered automation, distributed backend systems, cloud infrastructure, and building high-performing teams.
+            Member of Technical Staff at Mem0, building the memory layer for AI agents and apps.
+            Previously Sr. Engineering Manager at Medable — specializing in AI-powered automation, distributed backend systems, and building high-performing teams.
           </p>
           <div className="flex items-center justify-center gap-6 text-slate-500 dark:text-slate-400 mb-8">
             <div className="flex items-center gap-2">
@@ -351,10 +360,14 @@ const Index = () => {
           <CardContent className="p-8 space-y-4">
             <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
               I build high-leverage systems, the kind that compress months of work into days and flip unit economics from deeply negative to profitable.
-              I'm a hands-on engineering manager: I design systems, review architecture, and write production code daily alongside my team.
+              I'm a hands-on engineer who designs systems, reviews architecture, and ships production code.
             </p>
             <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-              As Engineering Manager at Medable, I lead a globally distributed team of 9 engineers across India, Argentina, and Dubai,
+              Currently at Mem0 as Member of Technical Staff, working on the memory layer for AI agents and apps — enabling persistent,
+              contextual intelligence across interactions.
+            </p>
+            <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
+              Previously as Sr. Engineering Manager at Medable, I led a globally distributed team of 9 engineers across India, Argentina, and Dubai,
               building AI-powered infrastructure for clinical trials. My most significant contribution: redesigning study setup end-to-end cutting
               delivery time from 6 months to under a week and driving profit margins from -90% to +40%. That required rethinking the architecture,
               the AI strategy, and how the team operated—not just shipping faster.
