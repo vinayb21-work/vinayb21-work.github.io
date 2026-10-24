@@ -363,8 +363,12 @@ const Index = () => {
               I'm a hands-on engineer who designs systems, reviews architecture, and ships production code.
             </p>
             <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-              Currently at Mem0 as Member of Technical Staff, working on the memory layer for AI agents and apps — enabling persistent,
-              contextual intelligence across interactions.
+              Currently at Mem0 as Member of Technical Staff, working on the memory layer for AI agents and apps.
+              Most AI systems today are stateless — every conversation starts from zero, every agent forgets what it learned.
+              Mem0 solves that: a persistent, adaptive memory layer that gives agents and applications the ability to remember, reason over history,
+              and get smarter over time. I work across the full stack — from memory storage and retrieval architecture (vector + graph + key-value)
+              to the APIs and SDKs that developers use to integrate memory into their products.
+              Recently shipped the new pricing model, rethinking how memory usage is metered and monetized at scale.
             </p>
             <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
               Previously as Sr. Engineering Manager at Medable, I led a globally distributed team of 9 engineers across India, Argentina, and Dubai,
