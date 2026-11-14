@@ -1,4 +1,4 @@
-import { readdirSync, statSync, writeFileSync } from 'fs';
+import { existsSync, readdirSync, statSync, writeFileSync } from 'fs';
 import { join } from 'path';
 
 const IMAGE_EXTS = new Set(['.jpg', '.jpeg', '.png', '.webp', '.JPG', '.JPEG', '.PNG', '.WEBP']);
@@ -18,6 +18,7 @@ function scanDir(dir) {
 
 function buildManifest(baseDir, publicPrefix) {
   const map = {};
+  if (!existsSync(baseDir)) return map;
   const files = scanDir(baseDir);
   for (const file of files) {
     const rel = file.replace(baseDir, '').replace(/\\/g, '/').replace(/^\//, '');
@@ -37,6 +38,7 @@ function buildManifest(baseDir, publicPrefix) {
 const CDN = 'https://cdn.jsdelivr.net/gh/vinayb21-work/vinayb21-work.github.io@main/public';
 const photosManifest = buildManifest('public/uploads/photos', `${CDN}/uploads/photos`);
 const treksManifest = buildManifest('public/uploads/treks', `${CDN}/uploads/treks`);
+const sketchesManifest = buildManifest('public/uploads/sketching', `${CDN}/uploads/sketching`);
 
-writeFileSync('src/data/image-manifest.json', JSON.stringify({ photos: photosManifest, treks: treksManifest }, null, 2));
-console.log(`Manifest written: ${Object.keys(photosManifest).length} photo categories, ${Object.keys(treksManifest).length} trek folders`);
+writeFileSync('src/data/image-manifest.json', JSON.stringify({ photos: photosManifest, treks: treksManifest, sketches: sketchesManifest }, null, 2));
+console.log(`Manifest written: ${Object.keys(photosManifest).length} photo categories, ${Object.keys(treksManifest).length} trek folders, ${Object.keys(sketchesManifest).length} sketch folders`);

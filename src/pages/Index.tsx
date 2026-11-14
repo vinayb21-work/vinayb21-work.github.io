@@ -6,7 +6,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { Linkedin, Mail, MapPin, Calendar, Code, Database, Cloud, Brain, FileText, TrendingUp, Users, Zap, DollarSign, Github, BookOpen, Mountain, Camera, Menu, X, Briefcase, Heart } from 'lucide-react';
+import { Linkedin, Mail, MapPin, Calendar, Code, Database, Cloud, Brain, FileText, TrendingUp, Users, Zap, DollarSign, Github, BookOpen, Mountain, Camera, Pencil, Menu, X, Briefcase, Heart } from 'lucide-react';
 import BlogSection from '@/components/BlogSection';
 import ThemeToggle from '@/components/ThemeToggle';
 import Footer from '@/components/Footer';
@@ -1000,7 +1000,7 @@ const Index = () => {
           <h2 className="text-3xl font-bold text-center text-slate-800 dark:text-slate-100 mb-4">Beyond Work</h2>
           <p className="text-center text-slate-600 dark:text-slate-400 mb-12">When I'm not building software, you'll find me...</p>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
             <Link to="/reading" className="text-center group cursor-pointer block">
               <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-amber-400 to-orange-500 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
                 <BookOpen className="w-8 h-8 text-white" />
@@ -1023,6 +1023,14 @@ const Index = () => {
               </div>
               <h3 className="font-semibold text-lg text-slate-800 dark:text-slate-100 mb-2 group-hover:text-violet-600 dark:group-hover:text-violet-400 transition-colors">Photography</h3>
               <p className="text-slate-600 dark:text-slate-400 text-sm">Capturing landscapes, wildlife, and the beauty of the outdoors</p>
+            </Link>
+
+            <Link to="/sketching" className="text-center group cursor-pointer block">
+              <div className="w-16 h-16 mx-auto mb-4 bg-gradient-to-br from-rose-400 to-pink-500 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <Pencil className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="font-semibold text-lg text-slate-800 dark:text-slate-100 mb-2 group-hover:text-rose-600 dark:group-hover:text-rose-400 transition-colors">Sketching</h3>
+              <p className="text-slate-600 dark:text-slate-400 text-sm">Putting pencil to paper — portraits, places, and quiet observations</p>
             </Link>
           </div>
         </div>
